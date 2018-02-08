@@ -14,6 +14,13 @@ class YYAnimatedImageController: UIViewController {
     var imageView: UIImageView!
     var scrollView: UIScrollView!
     
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: "\(YYImageProgressiveExample.self)", bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Animated Image"
@@ -100,6 +107,7 @@ class YYAnimatedImageController: UIViewController {
         imageView.top = (scrollView.subviews.last?.bottom)! + 30
         imageView.contentMode = .scaleAspectFit
         self.scrollView.addSubview(imageView)
+        
         let imageLabel = UILabel()
         imageLabel.backgroundColor = UIColor.clear
         imageLabel.frame = CGRect(x: 0, y: 0, width: self.view.width, height: 20)

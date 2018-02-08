@@ -14,6 +14,7 @@ class YYImageExampleController: UIViewController {
     @IBOutlet weak var listTable: UITableView!
     var dataArray = VCModel.initImageVCModel()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.listTable.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
@@ -52,8 +53,10 @@ extension YYImageExampleController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
        let model = dataArray[indexPath.row]
-        let className = NSClassFromString(model.vcName) as? UIViewController.Type
-        self.navigationController?.pushViewController((className?.init())!, animated: true)
+        if let className = NSClassFromString(model.vcName) as? UIViewController.Type {
+            self.navigationController?.pushViewController((className.init()), animated: true)
+            
+        }
         
     }
     
