@@ -67,6 +67,11 @@
 		A856C2D3202AEC5A00A5513C /* wall-e@2x.webp in Resources */ = {isa = PBXBuildFile; fileRef = A856C2C5202AEC5A00A5513C /* wall-e@2x.webp */; };
 		A856C2D4202AEC5A00A5513C /* pia@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A856C2C6202AEC5A00A5513C /* pia@2x.png */; };
 		A856C2D5202AEC5A00A5513C /* mew_baseline.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A856C2C7202AEC5A00A5513C /* mew_baseline.jpg */; };
+		A85FD2B5202C3B1F00E34617 /* YYWebImageExampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85FD2B4202C3B1F00E34617 /* YYWebImageExampleCell.swift */; };
+		A85FD2BB202D8D0900E34617 /* YYTextAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85FD2B9202D8D0900E34617 /* YYTextAttribute.swift */; };
+		A85FD2BC202D8D0900E34617 /* YYTextAttribute.xib in Resources */ = {isa = PBXBuildFile; fileRef = A85FD2BA202D8D0900E34617 /* YYTextAttribute.xib */; };
+		A85FD2BF202D8D2300E34617 /* YYTextTagController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85FD2BD202D8D2300E34617 /* YYTextTagController.swift */; };
+		A85FD2C0202D8D2300E34617 /* YYTextTagController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A85FD2BE202D8D2300E34617 /* YYTextTagController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -179,6 +184,11 @@
 		A856C2C5202AEC5A00A5513C /* wall-e@2x.webp */ = {isa = PBXFileReference; lastKnownFileType = file; name = "wall-e@2x.webp"; path = "../../Downloads/YYKit-master/Demo/YYKitDemo/wall-e@2x.webp"; sourceTree = "<group>"; };
 		A856C2C6202AEC5A00A5513C /* pia@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pia@2x.png"; path = "../../Downloads/YYKit-master/Demo/YYKitDemo/pia@2x.png"; sourceTree = "<group>"; };
 		A856C2C7202AEC5A00A5513C /* mew_baseline.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mew_baseline.jpg; sourceTree = "<group>"; };
+		A85FD2B4202C3B1F00E34617 /* YYWebImageExampleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYWebImageExampleCell.swift; sourceTree = "<group>"; };
+		A85FD2B9202D8D0900E34617 /* YYTextAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYTextAttribute.swift; sourceTree = "<group>"; };
+		A85FD2BA202D8D0900E34617 /* YYTextAttribute.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYTextAttribute.xib; sourceTree = "<group>"; };
+		A85FD2BD202D8D2300E34617 /* YYTextTagController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYTextTagController.swift; sourceTree = "<group>"; };
+		A85FD2BE202D8D2300E34617 /* YYTextTagController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYTextTagController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -333,6 +343,7 @@
 		A856C1A520283DF500A5513C /* Feed List */ = {
 			isa = PBXGroup;
 			children = (
+				A85FD2B2202C3AF200E34617 /* view */,
 				A856C1AF20283E7800A5513C /* FeedListViewController.swift */,
 				A856C1B020283E7800A5513C /* FeedListViewController.xib */,
 			);
@@ -342,6 +353,7 @@
 		A856C1A620283DF500A5513C /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				A85FD2B3202C3AFE00E34617 /* view */,
 				A856C1B320283EB200A5513C /* Model */,
 				A856C1A720283E3C00A5513C /* YYImageExampleController.swift */,
 				A856C1A820283E3C00A5513C /* YYImageExampleController.xib */,
@@ -366,6 +378,10 @@
 		A856C1BC20284B2F00A5513C /* vc */ = {
 			isa = PBXGroup;
 			children = (
+				A85FD2B9202D8D0900E34617 /* YYTextAttribute.swift */,
+				A85FD2BA202D8D0900E34617 /* YYTextAttribute.xib */,
+				A85FD2BD202D8D2300E34617 /* YYTextTagController.swift */,
+				A85FD2BE202D8D2300E34617 /* YYTextTagController.xib */,
 			);
 			path = vc;
 			sourceTree = "<group>";
@@ -395,6 +411,21 @@
 			);
 			name = image;
 			path = ../../../image;
+			sourceTree = "<group>";
+		};
+		A85FD2B2202C3AF200E34617 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		A85FD2B3202C3AFE00E34617 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				A85FD2B4202C3B1F00E34617 /* YYWebImageExampleCell.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -530,6 +561,7 @@
 				A856C2C8202AEC5A00A5513C /* cube@2x.png in Resources */,
 				A856C2AC202994B700A5513C /* ResourceTwitter.bundle in Resources */,
 				A856C2D4202AEC5A00A5513C /* pia@2x.png in Resources */,
+				A85FD2BC202D8D0900E34617 /* YYTextAttribute.xib in Resources */,
 				A856C1B220283E7800A5513C /* FeedListViewController.xib in Resources */,
 				A856C1C12029513A00A5513C /* wall-e@2x.webp in Resources */,
 				A856C2D2202AEC5A00A5513C /* nyancat@2x.webp in Resources */,
@@ -553,6 +585,7 @@
 				A856C2CB202AEC5A00A5513C /* mew_baseline.png in Resources */,
 				A856C2D5202AEC5A00A5513C /* mew_baseline.jpg in Resources */,
 				A856C1BF20284C0900A5513C /* niconiconi@2x.gif in Resources */,
+				A85FD2C0202D8D2300E34617 /* YYTextTagController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,7 +619,10 @@
 				A856C1AD20283E5600A5513C /* YYTextViewController.swift in Sources */,
 				A856C1A920283E3C00A5513C /* YYImageExampleController.swift in Sources */,
 				A856C1BB202849F800A5513C /* BaseViewController.swift in Sources */,
+				A85FD2BF202D8D2300E34617 /* YYTextTagController.swift in Sources */,
+				A85FD2B5202C3B1F00E34617 /* YYWebImageExampleCell.swift in Sources */,
 				A856C146202838C800A5513C /* AppDelegate.swift in Sources */,
+				A85FD2BB202D8D0900E34617 /* YYTextAttribute.swift in Sources */,
 				A856C1B520283ED600A5513C /* VCModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

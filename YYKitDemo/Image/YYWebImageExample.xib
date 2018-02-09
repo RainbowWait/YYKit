@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YYWebImageExample" customModule="YYKitDemo" customModuleProvider="target">
             <connections>
+                <outlet property="listTableView" destination="zCX-bO-cAY" id="eMl-YB-uL4"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,7 +19,23 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zCX-bO-cAY">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="khM-Tm-A2Y"/>
+                        <outlet property="delegate" destination="-1" id="ReE-2V-lhw"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zCX-bO-cAY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="EHb-pz-fTw"/>
+                <constraint firstAttribute="trailing" secondItem="zCX-bO-cAY" secondAttribute="trailing" id="js4-cs-F3g"/>
+                <constraint firstItem="zCX-bO-cAY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qAl-MN-rXc"/>
+                <constraint firstAttribute="bottom" secondItem="zCX-bO-cAY" secondAttribute="bottom" id="qjV-hp-Meh"/>
+            </constraints>
         </view>
     </objects>
 </document>
