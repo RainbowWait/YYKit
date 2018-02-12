@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YYTextViewController" customModule="YYKitDemo" customModuleProvider="target">
             <connections>
+                <outlet property="listTableView" destination="J7C-4f-YvP" id="SVV-Jl-A7b"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="z77-em-q2I"/>
             </connections>
         </placeholder>
@@ -18,7 +19,23 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="J7C-4f-YvP">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="xse-Lg-AlN"/>
+                        <outlet property="delegate" destination="-1" id="IMy-6z-38f"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="J7C-4f-YvP" secondAttribute="bottom" id="eWx-VE-8T4"/>
+                <constraint firstItem="J7C-4f-YvP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rpZ-2L-ct1"/>
+                <constraint firstItem="J7C-4f-YvP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="se6-f8-8lU"/>
+                <constraint firstAttribute="trailing" secondItem="J7C-4f-YvP" secondAttribute="trailing" id="vch-8u-YCT"/>
+            </constraints>
         </view>
     </objects>
 </document>

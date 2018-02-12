@@ -14,7 +14,6 @@ class YYImageExampleController: UIViewController {
     @IBOutlet weak var listTable: UITableView!
     var dataArray = VCModel.initImageVCModel()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.listTable.register(UITableViewCell.self, forCellReuseIdentifier: "cell")

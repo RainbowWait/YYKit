@@ -10,8 +10,12 @@ import UIKit
 
 class YYTextViewController: BaseViewController {
 
+    let dataArray = VCModel.initTextVCModel()
+    
+    @IBOutlet weak var listTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.listTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
 
         // Do any additional setup after loading the view.
     }
@@ -32,4 +36,26 @@ class YYTextViewController: BaseViewController {
     }
     */
 
+}
+extension YYTextViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dataArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! UITableViewCell
+        let model = dataArray[indexPath.row]
+        cell.textLabel?.text = model.title
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let model = dataArray[indexPath.row]
+        if let vcNameClass = NSClassFromString(model.vcName) as? UIViewController.Type {
+            self.navigationController?.pushViewController(vcNameClass.init(), animated: true)
+        }
+        
+    }
+    
+    
 }

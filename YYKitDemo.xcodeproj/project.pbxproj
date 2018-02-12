@@ -72,6 +72,23 @@
 		A85FD2BC202D8D0900E34617 /* YYTextAttribute.xib in Resources */ = {isa = PBXBuildFile; fileRef = A85FD2BA202D8D0900E34617 /* YYTextAttribute.xib */; };
 		A85FD2BF202D8D2300E34617 /* YYTextTagController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85FD2BD202D8D2300E34617 /* YYTextTagController.swift */; };
 		A85FD2C0202D8D2300E34617 /* YYTextTagController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A85FD2BE202D8D2300E34617 /* YYTextTagController.xib */; };
+		A85FD2C3202D8D9800E34617 /* YYTextAttachmentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85FD2C1202D8D9800E34617 /* YYTextAttachmentController.swift */; };
+		A85FD2C4202D8D9800E34617 /* YYTextAttachmentController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A85FD2C2202D8D9800E34617 /* YYTextAttachmentController.xib */; };
+		A85FD2C6202D8DA800E34617 /* YYTextEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85FD2C5202D8DA800E34617 /* YYTextEditController.swift */; };
+		A85FD2C9202D8DCB00E34617 /* YYTextMarkdowmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85FD2C7202D8DCB00E34617 /* YYTextMarkdowmController.swift */; };
+		A85FD2CA202D8DCB00E34617 /* YYTextMarkdowmController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A85FD2C8202D8DCB00E34617 /* YYTextMarkdowmController.xib */; };
+		A85FD2CD202D8DDC00E34617 /* YYTextEmotionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85FD2CB202D8DDC00E34617 /* YYTextEmotionController.swift */; };
+		A85FD2CE202D8DDC00E34617 /* YYTextEmotionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A85FD2CC202D8DDC00E34617 /* YYTextEmotionController.xib */; };
+		A85FD2D1202D8DF700E34617 /* YYTextBindingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85FD2CF202D8DF700E34617 /* YYTextBindingController.swift */; };
+		A85FD2D2202D8DF700E34617 /* YYTextBindingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A85FD2D0202D8DF700E34617 /* YYTextBindingController.xib */; };
+		A85FD2D5202D8E0D00E34617 /* YYTextCopyPasteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85FD2D3202D8E0D00E34617 /* YYTextCopyPasteController.swift */; };
+		A85FD2D6202D8E0D00E34617 /* YYTextCopyPasteController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A85FD2D4202D8E0D00E34617 /* YYTextCopyPasteController.xib */; };
+		A85FD2D9202D8E3000E34617 /* YYTextUndoRedoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85FD2D7202D8E3000E34617 /* YYTextUndoRedoController.swift */; };
+		A85FD2DA202D8E3000E34617 /* YYTextUndoRedoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A85FD2D8202D8E3000E34617 /* YYTextUndoRedoController.xib */; };
+		A85FD2DD202D8E4100E34617 /* YYTextRubyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85FD2DB202D8E4100E34617 /* YYTextRubyController.swift */; };
+		A85FD2DE202D8E4100E34617 /* YYTextRubyController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A85FD2DC202D8E4100E34617 /* YYTextRubyController.xib */; };
+		A85FD2E1202D8E5800E34617 /* YYTextAsyncController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85FD2DF202D8E5800E34617 /* YYTextAsyncController.swift */; };
+		A85FD2E2202D8E5800E34617 /* YYTextAsyncController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A85FD2E0202D8E5800E34617 /* YYTextAsyncController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -189,6 +206,23 @@
 		A85FD2BA202D8D0900E34617 /* YYTextAttribute.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYTextAttribute.xib; sourceTree = "<group>"; };
 		A85FD2BD202D8D2300E34617 /* YYTextTagController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYTextTagController.swift; sourceTree = "<group>"; };
 		A85FD2BE202D8D2300E34617 /* YYTextTagController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYTextTagController.xib; sourceTree = "<group>"; };
+		A85FD2C1202D8D9800E34617 /* YYTextAttachmentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYTextAttachmentController.swift; sourceTree = "<group>"; };
+		A85FD2C2202D8D9800E34617 /* YYTextAttachmentController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYTextAttachmentController.xib; sourceTree = "<group>"; };
+		A85FD2C5202D8DA800E34617 /* YYTextEditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYTextEditController.swift; sourceTree = "<group>"; };
+		A85FD2C7202D8DCB00E34617 /* YYTextMarkdowmController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYTextMarkdowmController.swift; sourceTree = "<group>"; };
+		A85FD2C8202D8DCB00E34617 /* YYTextMarkdowmController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYTextMarkdowmController.xib; sourceTree = "<group>"; };
+		A85FD2CB202D8DDC00E34617 /* YYTextEmotionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYTextEmotionController.swift; sourceTree = "<group>"; };
+		A85FD2CC202D8DDC00E34617 /* YYTextEmotionController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYTextEmotionController.xib; sourceTree = "<group>"; };
+		A85FD2CF202D8DF700E34617 /* YYTextBindingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYTextBindingController.swift; sourceTree = "<group>"; };
+		A85FD2D0202D8DF700E34617 /* YYTextBindingController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYTextBindingController.xib; sourceTree = "<group>"; };
+		A85FD2D3202D8E0D00E34617 /* YYTextCopyPasteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYTextCopyPasteController.swift; sourceTree = "<group>"; };
+		A85FD2D4202D8E0D00E34617 /* YYTextCopyPasteController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYTextCopyPasteController.xib; sourceTree = "<group>"; };
+		A85FD2D7202D8E3000E34617 /* YYTextUndoRedoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYTextUndoRedoController.swift; sourceTree = "<group>"; };
+		A85FD2D8202D8E3000E34617 /* YYTextUndoRedoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYTextUndoRedoController.xib; sourceTree = "<group>"; };
+		A85FD2DB202D8E4100E34617 /* YYTextRubyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYTextRubyController.swift; sourceTree = "<group>"; };
+		A85FD2DC202D8E4100E34617 /* YYTextRubyController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYTextRubyController.xib; sourceTree = "<group>"; };
+		A85FD2DF202D8E5800E34617 /* YYTextAsyncController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYTextAsyncController.swift; sourceTree = "<group>"; };
+		A85FD2E0202D8E5800E34617 /* YYTextAsyncController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYTextAsyncController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -382,6 +416,23 @@
 				A85FD2BA202D8D0900E34617 /* YYTextAttribute.xib */,
 				A85FD2BD202D8D2300E34617 /* YYTextTagController.swift */,
 				A85FD2BE202D8D2300E34617 /* YYTextTagController.xib */,
+				A85FD2C1202D8D9800E34617 /* YYTextAttachmentController.swift */,
+				A85FD2C2202D8D9800E34617 /* YYTextAttachmentController.xib */,
+				A85FD2C5202D8DA800E34617 /* YYTextEditController.swift */,
+				A85FD2C7202D8DCB00E34617 /* YYTextMarkdowmController.swift */,
+				A85FD2C8202D8DCB00E34617 /* YYTextMarkdowmController.xib */,
+				A85FD2CB202D8DDC00E34617 /* YYTextEmotionController.swift */,
+				A85FD2CC202D8DDC00E34617 /* YYTextEmotionController.xib */,
+				A85FD2CF202D8DF700E34617 /* YYTextBindingController.swift */,
+				A85FD2D0202D8DF700E34617 /* YYTextBindingController.xib */,
+				A85FD2D3202D8E0D00E34617 /* YYTextCopyPasteController.swift */,
+				A85FD2D4202D8E0D00E34617 /* YYTextCopyPasteController.xib */,
+				A85FD2D7202D8E3000E34617 /* YYTextUndoRedoController.swift */,
+				A85FD2D8202D8E3000E34617 /* YYTextUndoRedoController.xib */,
+				A85FD2DB202D8E4100E34617 /* YYTextRubyController.swift */,
+				A85FD2DC202D8E4100E34617 /* YYTextRubyController.xib */,
+				A85FD2DF202D8E5800E34617 /* YYTextAsyncController.swift */,
+				A85FD2E0202D8E5800E34617 /* YYTextAsyncController.xib */,
 			);
 			path = vc;
 			sourceTree = "<group>";
@@ -566,23 +617,31 @@
 				A856C1C12029513A00A5513C /* wall-e@2x.webp in Resources */,
 				A856C2D2202AEC5A00A5513C /* nyancat@2x.webp in Resources */,
 				A856C2CD202AEC5A00A5513C /* mew_baseline.gif in Resources */,
+				A85FD2C4202D8D9800E34617 /* YYTextAttachmentController.xib in Resources */,
 				A856C2D3202AEC5A00A5513C /* wall-e@2x.webp in Resources */,
 				A856C2CF202AEC5A00A5513C /* niconiconi@2x.gif in Resources */,
 				A856C2B82029A43000A5513C /* YYWebImageExample.xib in Resources */,
 				A856C1B92028458900A5513C /* ViewController.xib in Resources */,
 				A856C153202838C800A5513C /* LaunchScreen.storyboard in Resources */,
+				A85FD2CA202D8DCB00E34617 /* YYTextMarkdowmController.xib in Resources */,
 				A856C150202838C800A5513C /* Assets.xcassets in Resources */,
 				A856C1822028391300A5513C /* WebP.sh in Resources */,
 				A856C14B202838C800A5513C /* Main.storyboard in Resources */,
 				A856C2AA20298E4C00A5513C /* EmoticonWeibo.bundle in Resources */,
 				A856C1AE20283E5600A5513C /* YYTextViewController.xib in Resources */,
+				A85FD2D6202D8E0D00E34617 /* YYTextCopyPasteController.xib in Resources */,
 				A856C2CA202AEC5A00A5513C /* google@2x.webp in Resources */,
 				A856C2D1202AEC5A00A5513C /* mew_interlaced.gif in Resources */,
+				A85FD2D2202D8DF700E34617 /* YYTextBindingController.xib in Resources */,
+				A85FD2DA202D8E3000E34617 /* YYTextUndoRedoController.xib in Resources */,
 				A856C2CC202AEC5A00A5513C /* mew_interlaced.png in Resources */,
 				A856C2B42029A41C00A5513C /* YYImageProgressiveExample.xib in Resources */,
 				A856C2CE202AEC5A00A5513C /* Twitter@3x.jpg in Resources */,
+				A85FD2DE202D8E4100E34617 /* YYTextRubyController.xib in Resources */,
 				A856C1C32029516F00A5513C /* pia@2x.png in Resources */,
 				A856C2CB202AEC5A00A5513C /* mew_baseline.png in Resources */,
+				A85FD2E2202D8E5800E34617 /* YYTextAsyncController.xib in Resources */,
+				A85FD2CE202D8DDC00E34617 /* YYTextEmotionController.xib in Resources */,
 				A856C2D5202AEC5A00A5513C /* mew_baseline.jpg in Resources */,
 				A856C1BF20284C0900A5513C /* niconiconi@2x.gif in Resources */,
 				A85FD2C0202D8D2300E34617 /* YYTextTagController.xib in Resources */,
@@ -612,18 +671,27 @@
 			files = (
 				A856C2AF2029A19A00A5513C /* YYAnimatedImageController.swift in Sources */,
 				A856C1B120283E7800A5513C /* FeedListViewController.swift in Sources */,
+				A85FD2E1202D8E5800E34617 /* YYTextAsyncController.swift in Sources */,
+				A85FD2C3202D8D9800E34617 /* YYTextAttachmentController.swift in Sources */,
 				A856C2B72029A43000A5513C /* YYWebImageExample.swift in Sources */,
 				A856C148202838C800A5513C /* ViewController.swift in Sources */,
+				A85FD2D5202D8E0D00E34617 /* YYTextCopyPasteController.swift in Sources */,
+				A85FD2DD202D8E4100E34617 /* YYTextRubyController.swift in Sources */,
 				A856C14E202838C800A5513C /* YYKitDemo.xcdatamodeld in Sources */,
+				A85FD2C6202D8DA800E34617 /* YYTextEditController.swift in Sources */,
 				A856C2B32029A41C00A5513C /* YYImageProgressiveExample.swift in Sources */,
 				A856C1AD20283E5600A5513C /* YYTextViewController.swift in Sources */,
 				A856C1A920283E3C00A5513C /* YYImageExampleController.swift in Sources */,
+				A85FD2D9202D8E3000E34617 /* YYTextUndoRedoController.swift in Sources */,
 				A856C1BB202849F800A5513C /* BaseViewController.swift in Sources */,
 				A85FD2BF202D8D2300E34617 /* YYTextTagController.swift in Sources */,
+				A85FD2C9202D8DCB00E34617 /* YYTextMarkdowmController.swift in Sources */,
 				A85FD2B5202C3B1F00E34617 /* YYWebImageExampleCell.swift in Sources */,
+				A85FD2CD202D8DDC00E34617 /* YYTextEmotionController.swift in Sources */,
 				A856C146202838C800A5513C /* AppDelegate.swift in Sources */,
 				A85FD2BB202D8D0900E34617 /* YYTextAttribute.swift in Sources */,
 				A856C1B520283ED600A5513C /* VCModel.swift in Sources */,
+				A85FD2D1202D8DF700E34617 /* YYTextBindingController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

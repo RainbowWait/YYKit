@@ -18,18 +18,34 @@ class VCModel: NSObject {
     
     class func initModel() -> [VCModel] {
         var vcArray: [VCModel] = [VCModel]()
-        vcArray.append(VCModel("YYKitDemo.YYImageExampleController", "Image"))
-        vcArray.append(VCModel("YYKitDemo.YYTextViewController", "Text"))
-        vcArray.append(VCModel("YYKitDemo.FeedListViewController", "Feed List Demo"))
+        vcArray.append(VCModel(YYImageExampleController.className(), "Image"))
+        vcArray.append(VCModel(YYTextViewController.className(), "Text"))
+        vcArray.append(VCModel(FeedListViewController.className(), "Feed List Demo"))
         return vcArray
     }
     
    class func initImageVCModel() -> [VCModel] {
         var vcArray: [VCModel] = [VCModel]()
-        vcArray.append(VCModel("YYKitDemo.YYAnimatedImageController", "Animated Image"))
-        vcArray.append(VCModel("YYKitDemo.YYImageProgressiveExample", "Progressive Image"))
-        vcArray.append(VCModel("YYKitDemo.YYWebImageExample", "Web Image"))
+        vcArray.append(VCModel(YYAnimatedImageController.className(), "Animated Image"))
+        vcArray.append(VCModel(YYImageProgressiveExample.className(), "Progressive Image"))
+        vcArray.append(VCModel(YYWebImageExample.className(), "Web Image"))
         return vcArray
+    }
+    
+   class func initTextVCModel() -> [VCModel] {
+   var vcArray: [VCModel] = [VCModel]()
+    vcArray.append(VCModel(YYTextAttribute.className(), "Text Attribute1"))
+vcArray.append(VCModel(YYTextTagController.className(), "Text Attributes2"))
+    vcArray.append(VCModel(YYTextAttachmentController.className(), "Text Attachments"))
+    vcArray.append(VCModel(YYTextEditController.className(), "Text Edit"))
+    vcArray.append(VCModel(YYTextMarkdowmController.className(), "Text Parser(Markdown)"))
+    vcArray.append(VCModel(YYTextEmotionController.className(), "Text Parser(Emotion)"))
+    vcArray.append(VCModel(YYTextBindingController.className(), "Text Binding"))
+    vcArray.append(VCModel(YYTextCopyPasteController.className(), "Copy and paste"))
+    vcArray.append(VCModel(YYTextUndoRedoController.className(), "Undo and Redo"))
+    vcArray.append(VCModel(YYTextRubyController.className(), "Ruby Annotation"))
+    vcArray.append(VCModel(YYTextAsyncController.className(), "Asyn Display"))
+    return vcArray
     }
     
 }
