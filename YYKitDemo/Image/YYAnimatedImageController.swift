@@ -9,7 +9,7 @@
 import UIKit
 import YYKit
 
-class YYAnimatedImageController: UIViewController {
+class YYAnimatedImageController: UIViewController,UIGestureRecognizerDelegate {
     
     var imageView: UIImageView!
     var scrollView: UIScrollView!
@@ -107,6 +107,11 @@ class YYAnimatedImageController: UIViewController {
         imageView.top = (scrollView.subviews.last?.bottom)! + 30
         imageView.contentMode = .scaleAspectFit
         self.scrollView.addSubview(imageView)
+        YYImageExampleHelper.addPanControlToAnimatedImageView(view: imageView)
+        YYImageExampleHelper.addTapControlToAnimatedImageView(view: imageView)
+        for g in imageView.gestureRecognizers! {
+            g.delegate = self as! UIGestureRecognizerDelegate
+        }
         
         let imageLabel = UILabel()
         imageLabel.backgroundColor = UIColor.clear
@@ -120,6 +125,10 @@ class YYAnimatedImageController: UIViewController {
         //        }
         print(scrollView.frame, scrollView.contentSize,scrollView.contentOffset,self.view.frame)
         
+    }
+    
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        return true
     }
     
     override func didReceiveMemoryWarning() {

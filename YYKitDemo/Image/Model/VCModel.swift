@@ -29,6 +29,7 @@ class VCModel: NSObject {
         vcArray.append(VCModel(YYAnimatedImageController.className(), "Animated Image"))
         vcArray.append(VCModel(YYImageProgressiveExample.className(), "Progressive Image"))
         vcArray.append(VCModel(YYWebImageExample.className(), "Web Image"))
+    vcArray.append(VCModel(CollectionViewController.className(), "CollectionView自定义高度"))
         return vcArray
     }
     

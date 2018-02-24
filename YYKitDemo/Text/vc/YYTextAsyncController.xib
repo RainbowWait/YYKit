@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YYTextAsyncController" customModule="YYKitDemo" customModuleProvider="target">
             <connections>
+                <outlet property="listTableView" destination="Cen-cw-dKH" id="ZuP-kS-GLR"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,7 +19,23 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Cen-cw-dKH">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="SSK-ZQ-ScS"/>
+                        <outlet property="delegate" destination="-1" id="SfU-dm-ZLV"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Cen-cw-dKH" secondAttribute="bottom" id="CG5-3w-VQ3"/>
+                <constraint firstItem="Cen-cw-dKH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="UHb-Yc-p3V"/>
+                <constraint firstAttribute="trailing" secondItem="Cen-cw-dKH" secondAttribute="trailing" id="Y0j-eu-zTk"/>
+                <constraint firstItem="Cen-cw-dKH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cO1-hF-zR7"/>
+            </constraints>
         </view>
     </objects>
 </document>

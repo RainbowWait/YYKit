@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="YYKitDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="429" height="495"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="429" height="495"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1" text="11111111111111111111111111111111111111111111111111111111111111111111" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fE-ge-U3t">
+                        <rect key="frame" x="0.0" y="0.0" width="429" height="395"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="mew_baseline.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="taS-DZ-Ewl">
+                        <rect key="frame" x="0.0" y="395" width="429" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="AfJ-8m-E3b"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="taS-DZ-Ewl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0e5-9I-MVQ"/>
+                <constraint firstItem="3fE-ge-U3t" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7V7-Ti-Ldi"/>
+                <constraint firstItem="3fE-ge-U3t" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="klD-8a-jC8"/>
+                <constraint firstAttribute="trailing" secondItem="3fE-ge-U3t" secondAttribute="trailing" id="pyz-mZ-2oh"/>
+                <constraint firstAttribute="trailing" secondItem="taS-DZ-Ewl" secondAttribute="trailing" id="vXO-gS-ThE"/>
+                <constraint firstItem="taS-DZ-Ewl" firstAttribute="top" secondItem="3fE-ge-U3t" secondAttribute="bottom" id="xwT-Zf-dTp"/>
+                <constraint firstAttribute="bottom" secondItem="taS-DZ-Ewl" secondAttribute="bottom" id="yUW-Xf-7NF"/>
+            </constraints>
+            <size key="customSize" width="429" height="495"/>
+            <connections>
+                <outlet property="img" destination="taS-DZ-Ewl" id="7kb-zw-Fhy"/>
+                <outlet property="label" destination="3fE-ge-U3t" id="kmd-ln-aiV"/>
+            </connections>
+            <point key="canvasLocation" x="19.5" y="49.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="mew_baseline.jpg" width="600" height="600"/>
+    </resources>
+</document>

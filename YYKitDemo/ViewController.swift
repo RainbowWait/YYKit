@@ -42,7 +42,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let model = dataArray[indexPath.row]
         if let ClassName = NSClassFromString(model.vcName) as? UIViewController.Type {
-            self.navigationController?.pushViewController(ClassName.init(), animated: true)
+    self.navigationController?.pushViewController(ClassName.init(), animated: true)
             
         }
     }
