@@ -32,9 +32,9 @@ open class RouCollectionViewLayout<T: UICollectionViewCell>: UICollectionViewLay
     /** 列数 */
     public var columnNumber = 2
     /** 列间距 */
-    public var interitemSpacing: CGFloat = 5.0
+    public var interitemSpacing: CGFloat = 10
     /** 行间距 */
-    public var lineSpacing: CGFloat = 5.0
+    public var lineSpacing: CGFloat = 10
     ///顶部和底部是否留距离
     public var topAndBottomSpacing = false
     
@@ -152,7 +152,9 @@ public extension RouCollectionViewLayout {
             make.width.equalTo(width)
             make.edges.equalTo(UIEdgeInsets.zero)
         }
-        size = cell?.contentView.systemLayoutSizeFitting(UILayoutFittingCompressedSize)
+
+        //systemLayoutSizeFitting(UILayoutFittingCompressedSize)
+        size = cell?.contentView.systemLayoutSizeFitting(UILayoutFittingCompressedSize, withHorizontalFittingPriority: .defaultHigh, verticalFittingPriority: .defaultLow)
         return size ?? CGSize.zero
     }
     

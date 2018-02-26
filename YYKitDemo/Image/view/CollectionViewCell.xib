@@ -18,33 +18,46 @@
                 <rect key="frame" x="0.0" y="0.0" width="429" height="495"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1" text="11111111111111111111111111111111111111111111111111111111111111111111" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fE-ge-U3t">
-                        <rect key="frame" x="0.0" y="0.0" width="429" height="395"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="mew_baseline.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="taS-DZ-Ewl">
-                        <rect key="frame" x="0.0" y="395" width="429" height="100"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="mew_baseline.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="taS-DZ-Ewl">
+                        <rect key="frame" x="0.0" y="0.0" width="429" height="100"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="100" id="AfJ-8m-E3b"/>
                         </constraints>
                     </imageView>
+                    <view contentMode="scaleToFill" verticalHuggingPriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="Asr-tZ-ZLx" customClass="YYLabel">
+                        <rect key="frame" x="10" y="110" width="409" height="375"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="text" value="静安嘉哈哈哈哈哈哈或或或或或或或或或或或哈哈哈哈哈哈或或或或或或或或或或或或或"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="textAlignment">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="numberOfLines">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="textVerticalAlignment">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize_">
+                                <real key="value" value="17"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstItem="taS-DZ-Ewl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0e5-9I-MVQ"/>
-                <constraint firstItem="3fE-ge-U3t" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7V7-Ti-Ldi"/>
-                <constraint firstItem="3fE-ge-U3t" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="klD-8a-jC8"/>
-                <constraint firstAttribute="trailing" secondItem="3fE-ge-U3t" secondAttribute="trailing" id="pyz-mZ-2oh"/>
+                <constraint firstItem="taS-DZ-Ewl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="LOX-FH-O5Y"/>
+                <constraint firstAttribute="bottom" secondItem="Asr-tZ-ZLx" secondAttribute="bottom" constant="10" id="NmL-uR-wlB"/>
+                <constraint firstItem="Asr-tZ-ZLx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="hjP-Ra-aW9"/>
+                <constraint firstAttribute="trailing" secondItem="Asr-tZ-ZLx" secondAttribute="trailing" constant="10" id="qZX-VH-0vO"/>
+                <constraint firstItem="Asr-tZ-ZLx" firstAttribute="top" secondItem="taS-DZ-Ewl" secondAttribute="bottom" constant="10" id="rfI-y4-PaV"/>
                 <constraint firstAttribute="trailing" secondItem="taS-DZ-Ewl" secondAttribute="trailing" id="vXO-gS-ThE"/>
-                <constraint firstItem="taS-DZ-Ewl" firstAttribute="top" secondItem="3fE-ge-U3t" secondAttribute="bottom" id="xwT-Zf-dTp"/>
-                <constraint firstAttribute="bottom" secondItem="taS-DZ-Ewl" secondAttribute="bottom" id="yUW-Xf-7NF"/>
             </constraints>
             <size key="customSize" width="429" height="495"/>
             <connections>
                 <outlet property="img" destination="taS-DZ-Ewl" id="7kb-zw-Fhy"/>
-                <outlet property="label" destination="3fE-ge-U3t" id="kmd-ln-aiV"/>
+                <outlet property="label" destination="Asr-tZ-ZLx" id="OPt-wQ-n9f"/>
             </connections>
             <point key="canvasLocation" x="19.5" y="49.5"/>
         </collectionViewCell>

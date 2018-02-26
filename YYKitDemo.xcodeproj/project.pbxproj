@@ -104,6 +104,7 @@
 		A85FD2DE202D8E4100E34617 /* YYTextRubyController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A85FD2DC202D8E4100E34617 /* YYTextRubyController.xib */; };
 		A85FD2E1202D8E5800E34617 /* YYTextAsyncController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85FD2DF202D8E5800E34617 /* YYTextAsyncController.swift */; };
 		A85FD2E2202D8E5800E34617 /* YYTextAsyncController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A85FD2E0202D8E5800E34617 /* YYTextAsyncController.xib */; };
+		A88B1FF22043B08800897745 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A88B1FF12043B08800897745 /* SnapKit.framework */; };
 		A8BE9E6E2041066D00EBA5A8 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BE9E6C2041066D00EBA5A8 /* CollectionViewController.swift */; };
 		A8BE9E6F2041066D00EBA5A8 /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8BE9E6D2041066D00EBA5A8 /* CollectionViewController.xib */; };
 		A8BE9E7120410E6400EBA5A8 /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BE9E7020410E6400EBA5A8 /* CustomLayout.swift */; };
@@ -120,6 +121,7 @@
 		A8BE9E832041450400EBA5A8 /* HandyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8BE9E7C204143AC00EBA5A8 /* HandyJSON.framework */; };
 		A8BE9E842041450400EBA5A8 /* HandyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8BE9E7C204143AC00EBA5A8 /* HandyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A8BE9E86204147CF00EBA5A8 /* ActivityOnModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BE9E85204147CF00EBA5A8 /* ActivityOnModel.swift */; };
+		A8BE9E882043A1F900EBA5A8 /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BE9E872043A1F900EBA5A8 /* TestCell.swift */; };
 		A8EFC98F2040023C00E3FC65 /* AsyncCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EFC98E2040023C00E3FC65 /* AsyncCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -273,6 +275,7 @@
 		A85FD2DC202D8E4100E34617 /* YYTextRubyController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYTextRubyController.xib; sourceTree = "<group>"; };
 		A85FD2DF202D8E5800E34617 /* YYTextAsyncController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYTextAsyncController.swift; sourceTree = "<group>"; };
 		A85FD2E0202D8E5800E34617 /* YYTextAsyncController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYTextAsyncController.xib; sourceTree = "<group>"; };
+		A88B1FF12043B08800897745 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SnapKit.framework; sourceTree = "<group>"; };
 		A8BE9E6C2041066D00EBA5A8 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		A8BE9E6D2041066D00EBA5A8 /* CollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewController.xib; sourceTree = "<group>"; };
 		A8BE9E7020410E6400EBA5A8 /* CustomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = "<group>"; };
@@ -283,6 +286,7 @@
 		A8BE9E7C204143AC00EBA5A8 /* HandyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HandyJSON.framework; sourceTree = "<group>"; };
 		A8BE9E7F204144E500EBA5A8 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		A8BE9E85204147CF00EBA5A8 /* ActivityOnModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityOnModel.swift; sourceTree = "<group>"; };
+		A8BE9E872043A1F900EBA5A8 /* TestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
 		A8EFC98E2040023C00E3FC65 /* AsyncCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -306,6 +310,7 @@
 				A8BE9E7920413D0D00EBA5A8 /* SnapKit.framework in Frameworks */,
 				A8BE9E7A20413D1D00EBA5A8 /* SnapKit.framework in Frameworks */,
 				A856C18E202839A000A5513C /* QuartzCore.framework in Frameworks */,
+				A88B1FF22043B08800897745 /* SnapKit.framework in Frameworks */,
 				A856C18C2028399A00A5513C /* CoreImage.framework in Frameworks */,
 				A856C18A2028399200A5513C /* CoreGraphics.framework in Frameworks */,
 				A856C1882028398A00A5513C /* CoreText.framework in Frameworks */,
@@ -358,6 +363,7 @@
 				A8BE9E7F204144E500EBA5A8 /* Alamofire.framework */,
 				A8BE9E7C204143AC00EBA5A8 /* HandyJSON.framework */,
 				A8BE9E7820413D0C00EBA5A8 /* SnapKit.framework */,
+				A88B1FF12043B08800897745 /* SnapKit.framework */,
 				A856C176202838E900A5513C /* YYKit.xcodeproj */,
 				A856C144202838C800A5513C /* YYKitDemo */,
 				A856C15C202838C800A5513C /* YYKitDemoTests */,
@@ -576,6 +582,7 @@
 				A8BE9E7020410E6400EBA5A8 /* CustomLayout.swift */,
 				A8BE9E74204119CD00EBA5A8 /* CollectionViewCell.swift */,
 				A8BE9E75204119CD00EBA5A8 /* CollectionViewCell.xib */,
+				A8BE9E872043A1F900EBA5A8 /* TestCell.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -802,6 +809,7 @@
 				A856C2B72029A43000A5513C /* YYWebImageExample.swift in Sources */,
 				A856C148202838C800A5513C /* ViewController.swift in Sources */,
 				A85FD2D5202D8E0D00E34617 /* YYTextCopyPasteController.swift in Sources */,
+				A8BE9E882043A1F900EBA5A8 /* TestCell.swift in Sources */,
 				A85FD2DD202D8E4100E34617 /* YYTextRubyController.swift in Sources */,
 				A856C14E202838C800A5513C /* YYKitDemo.xcdatamodeld in Sources */,
 				A85FD2C6202D8DA800E34617 /* YYTextEditController.swift in Sources */,
