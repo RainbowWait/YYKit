@@ -122,6 +122,8 @@
 		A8BE9E842041450400EBA5A8 /* HandyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8BE9E7C204143AC00EBA5A8 /* HandyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A8BE9E86204147CF00EBA5A8 /* ActivityOnModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BE9E85204147CF00EBA5A8 /* ActivityOnModel.swift */; };
 		A8BE9E882043A1F900EBA5A8 /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BE9E872043A1F900EBA5A8 /* TestCell.swift */; };
+		A8CF15872047A72300611610 /* TextViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CF15852047A72300611610 /* TextViewViewController.swift */; };
+		A8CF15882047A72300611610 /* TextViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8CF15862047A72300611610 /* TextViewViewController.xib */; };
 		A8EFC98F2040023C00E3FC65 /* AsyncCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EFC98E2040023C00E3FC65 /* AsyncCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -287,6 +289,8 @@
 		A8BE9E7F204144E500EBA5A8 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		A8BE9E85204147CF00EBA5A8 /* ActivityOnModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityOnModel.swift; sourceTree = "<group>"; };
 		A8BE9E872043A1F900EBA5A8 /* TestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
+		A8CF15852047A72300611610 /* TextViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewViewController.swift; sourceTree = "<group>"; tabWidth = 3; };
+		A8CF15862047A72300611610 /* TextViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewViewController.xib; sourceTree = "<group>"; };
 		A8EFC98E2040023C00E3FC65 /* AsyncCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -534,6 +538,8 @@
 				A85FD2DC202D8E4100E34617 /* YYTextRubyController.xib */,
 				A85FD2DF202D8E5800E34617 /* YYTextAsyncController.swift */,
 				A85FD2E0202D8E5800E34617 /* YYTextAsyncController.xib */,
+				A8CF15852047A72300611610 /* TextViewViewController.swift */,
+				A8CF15862047A72300611610 /* TextViewViewController.xib */,
 			);
 			path = vc;
 			sourceTree = "<group>";
@@ -763,6 +769,7 @@
 				A85FD2D2202D8DF700E34617 /* YYTextBindingController.xib in Resources */,
 				A85FD2DA202D8E3000E34617 /* YYTextUndoRedoController.xib in Resources */,
 				A856C2CC202AEC5A00A5513C /* mew_interlaced.png in Resources */,
+				A8CF15882047A72300611610 /* TextViewViewController.xib in Resources */,
 				A856C2B42029A41C00A5513C /* YYImageProgressiveExample.xib in Resources */,
 				A856C2CE202AEC5A00A5513C /* Twitter@3x.jpg in Resources */,
 				A83AAD5020313CE20048EC0A /* dribbble64_imageio.png in Resources */,
@@ -828,6 +835,7 @@
 				A85FD2CD202D8DDC00E34617 /* YYTextEmotionController.swift in Sources */,
 				A8BE9E7120410E6400EBA5A8 /* CustomLayout.swift in Sources */,
 				A856C146202838C800A5513C /* AppDelegate.swift in Sources */,
+				A8CF15872047A72300611610 /* TextViewViewController.swift in Sources */,
 				A85FD2BB202D8D0900E34617 /* YYTextAttribute.swift in Sources */,
 				A856C1B520283ED600A5513C /* VCModel.swift in Sources */,
 				A85FD2D1202D8DF700E34617 /* YYTextBindingController.swift in Sources */,

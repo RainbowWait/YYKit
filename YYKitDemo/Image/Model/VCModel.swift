@@ -46,6 +46,7 @@ vcArray.append(VCModel(YYTextTagController.className(), "Text Attributes2"))
     vcArray.append(VCModel(YYTextUndoRedoController.className(), "Undo and Redo"))
     vcArray.append(VCModel(YYTextRubyController.className(), "Ruby Annotation"))
     vcArray.append(VCModel(YYTextAsyncController.className(), "Asyn Display"))
+    vcArray.append(VCModel(TextViewViewController.className(), "auto size"))
     return vcArray
     }
     

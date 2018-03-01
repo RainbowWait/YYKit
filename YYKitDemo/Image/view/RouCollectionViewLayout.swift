@@ -152,9 +152,9 @@ public extension RouCollectionViewLayout {
             make.width.equalTo(width)
             make.edges.equalTo(UIEdgeInsets.zero)
         }
-
-        //systemLayoutSizeFitting(UILayoutFittingCompressedSize)
-        size = cell?.contentView.systemLayoutSizeFitting(UILayoutFittingCompressedSize, withHorizontalFittingPriority: .defaultHigh, verticalFittingPriority: .defaultLow)
+        
+        size = cell?.contentView.systemLayoutSizeFitting(UILayoutFittingExpandedSize)
+        print("size.height = \(size?.height)")
         return size ?? CGSize.zero
     }
     
