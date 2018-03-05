@@ -9,82 +9,45 @@
 import UIKit
 
 
-//public struct ColumnData {
-//    var number = 0
-//    var height:CGFloat = 0
-//
-//    init(number: Int = 0, height: CGFloat = 0) {
-//        self.number = number
-//        self.height = height
-//    }
-//}
 
-//fileprivate enum SortEnum {
-//    case asc//升序
-//    case des//降序
-//}
-//class CustomLayout<T: UICollectionViewCell>: UICollectionViewLayout {
-//
-//    
-//    //MARK: - 公共属性
-//    /** 列数 */
-//    public var columnNumber = 2
-//    /** 列间距 */
-//    public var interitemSpacing: CGFloat = 5.0
-//    /** 行间距 */
-//    public var lineSpacing: CGFloat = 5.0
-//    ///顶部和底部是否留距离
-//    public var topAndBottomSpacing = false
-//    
-//    //MARK: - 私有属性
-//    /// 所有的layoutAttribute
-//    private var arrLayoutAttributes: [UICollectionViewLayoutAttributes] = {
-//        return [UICollectionViewLayoutAttributes]()
-//    }()
-//    ///所有Item高度
-//    private var arrItemSize: [CGSize] = {
-//        return [CGSize]()
-//    }()
-//    
-//    private var arrColumn: [ColumnData] = {
-//        return [ColumnData]()
-//    }()
-//    
-//    private var templateCell: T?
-//    private var itemWidth: CGFloat = 0
-//    private var insets: UIEdgeInsets!
-//    private var bounds: CGRect!
-//     init(_ type: T.Type) {
-//        super.init()
-//        let name = "\(type)"
-//        templateCell = Bundle.main.loadNibNamed(name, owner: self, options: nil)?.last as? T
-//        
-//    }
-//    
-//    required init?(coder aDecoder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
-//    override func prepare() {
-//        super.prepare()
-//        bounds = self.collectionView?.bounds ?? CGRect.zero
-//        insets = self.collectionView?.contentInset ?? UIEdgeInsets.zero
-//        let contentWidth = bounds.width - insets.left - insets.right
-//        let column = CGFloat(columnNumber)
-//        itemWidth = (contentWidth - (column - 1) * interitemSpacing) / column
-//        
-//    }
-//    
-//    func calculateAttributesWithItemWidth(_ width: CGFloat) {
-//        self.refreshLayoutCache()
-//    }
-//    
-//    func refreshLayoutCache()  {
-//        arrLayoutAttributes.removeAll()
-//        arrItemSize.removeAll()
-//        arrColumn.removeAll()
-//        for i in 0..<columnNumber {
-//            arrColumn.append(ColumnData(number: i, height: insets.top))
-//        }
-//    }
-//}
+class CustomLayout: UICollectionViewLayout {
+    
+    var attrArr: [UICollectionViewLayoutAttributes] = []
+    
+    let itmeWidth: CGFloat = 40
+    let intersectionWidth: CGFloat = 10
+    
+    override func prepare() {
+       super.prepare()
+        self.attrArr.removeAll()
+        self.createAttribute()
+    }
+    
+    func createAttribute() {
+        let count = self.collectionView?.numberOfItems(inSection: 0)
+        for i in 0..<count! {
+            let indexPath = IndexPath(item: i, section: 0)
+            let attrs = self.layoutAttributesForItem(at: indexPath)
+            self.attrArr.append(attrs!)
+        }
+        
+    }
+    
+    override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+        return self.attrArr
+        
+    }
+    
+    override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
+        let count = self.collectionView?.numberOfItems(inSection: 0)
+        let width = self.collectionView?.frame.width
+        let y = (self.collectionView?.frame.height)! / 2.0
+        let attriX = (width! - (itmeWidth + CGFloat(count! - 1) * (itmeWidth - intersectionWidth))) / 2 + (itmeWidth - intersectionWidth) * CGFloat(indexPath.row) + CGFloat(2 * indexPath.row)
+        let attr = UICollectionViewLayoutAttributes.init(forCellWith: indexPath)
+        attr.center = CGPoint(x: attriX, y: y)
+        attr.size = CGSize(width: itmeWidth, height: itmeWidth)
+        return attr
+    
+    }
+}
 

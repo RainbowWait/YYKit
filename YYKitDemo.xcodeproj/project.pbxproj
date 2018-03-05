@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8016C0620493FF500948A5B /* CustomLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8016C0420493FF500948A5B /* CustomLayoutViewController.swift */; };
+		A8016C0720493FF500948A5B /* CustomLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8016C0520493FF500948A5B /* CustomLayoutViewController.xib */; };
+		A8016C0A2049417D00948A5B /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8016C082049417D00948A5B /* CustomCollectionViewCell.swift */; };
+		A8016C0B2049417D00948A5B /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8016C092049417D00948A5B /* CustomCollectionViewCell.xib */; };
 		A83AAD4D20313CE20048EC0A /* dribbble128_imageio.png in Resources */ = {isa = PBXBuildFile; fileRef = A83AAD4120313CE20048EC0A /* dribbble128_imageio.png */; };
 		A83AAD4E20313CE20048EC0A /* dribbble256_imageio.png in Resources */ = {isa = PBXBuildFile; fileRef = A83AAD4220313CE20048EC0A /* dribbble256_imageio.png */; };
 		A83AAD4F20313CE20048EC0A /* dribbble512_imageio.png in Resources */ = {isa = PBXBuildFile; fileRef = A83AAD4320313CE20048EC0A /* dribbble512_imageio.png */; };
@@ -176,6 +180,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A8016C0420493FF500948A5B /* CustomLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayoutViewController.swift; sourceTree = "<group>"; };
+		A8016C0520493FF500948A5B /* CustomLayoutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomLayoutViewController.xib; sourceTree = "<group>"; };
+		A8016C082049417D00948A5B /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		A8016C092049417D00948A5B /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
 		A83AAD4120313CE20048EC0A /* dribbble128_imageio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dribbble128_imageio.png; sourceTree = "<group>"; };
 		A83AAD4220313CE20048EC0A /* dribbble256_imageio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dribbble256_imageio.png; sourceTree = "<group>"; };
 		A83AAD4320313CE20048EC0A /* dribbble512_imageio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dribbble512_imageio.png; sourceTree = "<group>"; };
@@ -501,6 +509,8 @@
 				A83AAD5E203181700048EC0A /* YYImageExampleHelper.swift */,
 				A8BE9E6C2041066D00EBA5A8 /* CollectionViewController.swift */,
 				A8BE9E6D2041066D00EBA5A8 /* CollectionViewController.xib */,
+				A8016C0420493FF500948A5B /* CustomLayoutViewController.swift */,
+				A8016C0520493FF500948A5B /* CustomLayoutViewController.xib */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -589,6 +599,8 @@
 				A8BE9E74204119CD00EBA5A8 /* CollectionViewCell.swift */,
 				A8BE9E75204119CD00EBA5A8 /* CollectionViewCell.xib */,
 				A8BE9E872043A1F900EBA5A8 /* TestCell.swift */,
+				A8016C082049417D00948A5B /* CustomCollectionViewCell.swift */,
+				A8016C092049417D00948A5B /* CustomCollectionViewCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -767,6 +779,7 @@
 				A83AAD5820313CE20048EC0A /* ermilio_q90.webp in Resources */,
 				A856C2D1202AEC5A00A5513C /* mew_interlaced.gif in Resources */,
 				A85FD2D2202D8DF700E34617 /* YYTextBindingController.xib in Resources */,
+				A8016C0720493FF500948A5B /* CustomLayoutViewController.xib in Resources */,
 				A85FD2DA202D8E3000E34617 /* YYTextUndoRedoController.xib in Resources */,
 				A856C2CC202AEC5A00A5513C /* mew_interlaced.png in Resources */,
 				A8CF15882047A72300611610 /* TextViewViewController.xib in Resources */,
@@ -777,6 +790,7 @@
 				A83AAD5120313CE20048EC0A /* ermilio.gif in Resources */,
 				A856C1C32029516F00A5513C /* pia@2x.png in Resources */,
 				A83AAD5420313CE20048EC0A /* ermilio_lossless.webp in Resources */,
+				A8016C0B2049417D00948A5B /* CustomCollectionViewCell.xib in Resources */,
 				A856C2CB202AEC5A00A5513C /* mew_baseline.png in Resources */,
 				A85FD2E2202D8E5800E34617 /* YYTextAsyncController.xib in Resources */,
 				A85FD2CE202D8DDC00E34617 /* YYTextEmotionController.xib in Resources */,
@@ -808,6 +822,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8BE9E6E2041066D00EBA5A8 /* CollectionViewController.swift in Sources */,
+				A8016C0A2049417D00948A5B /* CustomCollectionViewCell.swift in Sources */,
 				A8BE9E86204147CF00EBA5A8 /* ActivityOnModel.swift in Sources */,
 				A856C2AF2029A19A00A5513C /* YYAnimatedImageController.swift in Sources */,
 				A856C1B120283E7800A5513C /* FeedListViewController.swift in Sources */,
@@ -837,6 +852,7 @@
 				A856C146202838C800A5513C /* AppDelegate.swift in Sources */,
 				A8CF15872047A72300611610 /* TextViewViewController.swift in Sources */,
 				A85FD2BB202D8D0900E34617 /* YYTextAttribute.swift in Sources */,
+				A8016C0620493FF500948A5B /* CustomLayoutViewController.swift in Sources */,
 				A856C1B520283ED600A5513C /* VCModel.swift in Sources */,
 				A85FD2D1202D8DF700E34617 /* YYTextBindingController.swift in Sources */,
 				A83AAD5D20317C4A0048EC0A /* YYTextExampleHelper.swift in Sources */,

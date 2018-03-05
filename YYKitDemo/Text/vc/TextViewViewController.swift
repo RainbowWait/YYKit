@@ -43,26 +43,37 @@ class TextViewViewController: UIViewController, UITextViewDelegate {
     }
     func textViewDidChange(_ textView: UITextView) {
         let contentSize = textView.contentSize
-        if contentSize.height > topInset * 2 + lineHeight * 4 {
-            return
+        if contentSize.height > lineHeight * 4 {
+
+//            self.textView.layoutIfNeeded()
+            print("contentSize = \(contentSize)")
+            
+        }
+        if contentSize.height > lineHeight + 2 * topInset {
+                        self.textView.textContainerInset = UIEdgeInsets(top: 0, left: 6, bottom: 0, right: 6)
+        } else {
+           self.textView.textContainerInset = UIEdgeInsets(top: topInset, left: 6, bottom: topInset, right: 6)
         }
         var height = textView.frame.size.height
         if contentHeight != self.textView.contentSize.height {
             height = self.textView.contentSize.height
         } else {
-//          self.textView.textContainerInset = UIEdgeInsets(top: 8, left: 6, bottom: 8, right: 6)
+            
         }
         var frame = self.textView.frame
         frame.origin.y -= height - frame.size.height
         frame.size.height = height
-        self.textView.frame = frame
+//        if height > 4 * lineHeight {
+//            frame.size.height = 4 * lineHeight
+//            frame.origin.y =  320 - 4 * lineHeight
+//        }
         
-        if contentHeight !=
-            self.textView.contentSize.height {
-         self.textView.scrollToBottom()
-        }
+        
+            self.textView.frame = frame
+            self.textView.scrollToBottom()
+        
 
-                print(contentSize,textView.size, textView.textContainerInset)
+                print("contentSize = \(contentSize),textView.size = \(textView.size), textView.textContainerInset = \(textView.textContainerInset)")
     }
     func textViewDidChange(_ textView: YYTextView) {
         let contentSize = textView.contentSize

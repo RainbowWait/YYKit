@@ -35,5 +35,85 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YYKitDemo/Image/view/CustomLayout.swift"
+            timestampString = "541925531.110263"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "layoutAttributesForElements(in:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YYKitDemo/Image/view/CustomLayout.swift"
+            timestampString = "541925531.110329"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "layoutAttributesForItem(at:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YYKitDemo/Image/view/CustomLayout.swift"
+            timestampString = "541925531.110423"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "layoutAttributesForItem(at:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "YYKitDemo.CustomLayout.layoutAttributesForItem(at: Foundation.IndexPath) -&gt; Swift.Optional&lt;__ObjC.UICollectionViewLayoutAttributes&gt;"
+                  moduleName = "YYKitDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhengxiaoyan/Desktop/Swift/YYKitDemo/YYKitDemo/Image/view/CustomLayout.swift"
+                  timestampString = "541672562.556573"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "484">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "YYKitDemo.CustomLayout.layoutAttributesForItem(at: Foundation.IndexPath) -&gt; Swift.Optional&lt;__ObjC.UICollectionViewLayoutAttributes&gt;"
+                  moduleName = "YYKitDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhengxiaoyan/Desktop/Swift/YYKitDemo/YYKitDemo/Image/view/CustomLayout.swift"
+                  timestampString = "541672562.5584559"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "2168">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

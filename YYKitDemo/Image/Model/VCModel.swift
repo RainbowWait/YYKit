@@ -30,6 +30,7 @@ class VCModel: NSObject {
         vcArray.append(VCModel(YYImageProgressiveExample.className(), "Progressive Image"))
         vcArray.append(VCModel(YYWebImageExample.className(), "Web Image"))
     vcArray.append(VCModel(CollectionViewController.className(), "CollectionView自定义高度"))
+    vcArray.append(VCModel(CustomLayoutViewController.className(), "自定义CollectionViewLayout"))
         return vcArray
     }
     
