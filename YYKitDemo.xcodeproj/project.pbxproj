@@ -26,6 +26,8 @@
 		A83AAD5A203140D30048EC0A /* EmoticonQQ.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A83AAD59203140D30048EC0A /* EmoticonQQ.bundle */; };
 		A83AAD5D20317C4A0048EC0A /* YYTextExampleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83AAD5C20317C4A0048EC0A /* YYTextExampleHelper.swift */; };
 		A83AAD5F203181700048EC0A /* YYImageExampleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83AAD5E203181700048EC0A /* YYImageExampleHelper.swift */; };
+		A855D2A72052193100481FF6 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A855D2A52052193100481FF6 /* CustomViewController.swift */; };
+		A855D2A82052193100481FF6 /* CustomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A855D2A62052193100481FF6 /* CustomViewController.xib */; };
 		A856C146202838C800A5513C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A856C145202838C800A5513C /* AppDelegate.swift */; };
 		A856C148202838C800A5513C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A856C147202838C800A5513C /* ViewController.swift */; };
 		A856C14B202838C800A5513C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A856C149202838C800A5513C /* Main.storyboard */; };
@@ -199,6 +201,8 @@
 		A83AAD59203140D30048EC0A /* EmoticonQQ.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EmoticonQQ.bundle; sourceTree = "<group>"; };
 		A83AAD5C20317C4A0048EC0A /* YYTextExampleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYTextExampleHelper.swift; sourceTree = "<group>"; };
 		A83AAD5E203181700048EC0A /* YYImageExampleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYImageExampleHelper.swift; sourceTree = "<group>"; };
+		A855D2A52052193100481FF6 /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
+		A855D2A62052193100481FF6 /* CustomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomViewController.xib; sourceTree = "<group>"; };
 		A856C142202838C800A5513C /* YYKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A856C145202838C800A5513C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A856C147202838C800A5513C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -369,6 +373,15 @@
 			path = Compare;
 			sourceTree = "<group>";
 		};
+		A855D2A42052191700481FF6 /* CustomControl */ = {
+			isa = PBXGroup;
+			children = (
+				A855D2A52052193100481FF6 /* CustomViewController.swift */,
+				A855D2A62052193100481FF6 /* CustomViewController.xib */,
+			);
+			path = CustomControl;
+			sourceTree = "<group>";
+		};
 		A856C139202838C800A5513C = {
 			isa = PBXGroup;
 			children = (
@@ -398,6 +411,7 @@
 		A856C144202838C800A5513C /* YYKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A855D2A42052191700481FF6 /* CustomControl */,
 				A856C1A520283DF500A5513C /* Feed List */,
 				A856C1A620283DF500A5513C /* Image */,
 				A856C1A420283DF500A5513C /* Text */,
@@ -739,6 +753,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A855D2A82052193100481FF6 /* CustomViewController.xib in Resources */,
 				A83AAD5320313CE20048EC0A /* ermilio_lossless.bpg in Resources */,
 				A856C2B02029A19A00A5513C /* YYAnimatedImageController.xib in Resources */,
 				A83AAD4E20313CE20048EC0A /* dribbble256_imageio.png in Resources */,
@@ -848,6 +863,7 @@
 				A85FD2C9202D8DCB00E34617 /* YYTextMarkdowmController.swift in Sources */,
 				A85FD2B5202C3B1F00E34617 /* YYWebImageExampleCell.swift in Sources */,
 				A85FD2CD202D8DDC00E34617 /* YYTextEmotionController.swift in Sources */,
+				A855D2A72052193100481FF6 /* CustomViewController.swift in Sources */,
 				A8BE9E7120410E6400EBA5A8 /* CustomLayout.swift in Sources */,
 				A856C146202838C800A5513C /* AppDelegate.swift in Sources */,
 				A8CF15872047A72300611610 /* TextViewViewController.swift in Sources */,

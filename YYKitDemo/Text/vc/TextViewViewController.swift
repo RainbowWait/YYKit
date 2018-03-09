@@ -13,13 +13,19 @@ class TextViewViewController: UIViewController, UITextViewDelegate {
 
     typealias sizeBlock = (_ contentSize: CGSize)->Void
     var textView: UITextView!
+    var text: String? = "fjfjfjffj"
+    
     var contentHeight: CGFloat = 0
     let topInset: CGFloat = 8
     let fontSize: CGFloat = 17
     let lineHeight = UIFont.systemFont(ofSize: 17).lineHeight
+    public typealias ValidationValue = (_ name: String?) -> String
     
-    
-    
+    func validate(validation: @escaping ValidationValue) {
+        print("1111111111111")
+      print(validation(self.text))
+        print("2222222222222222")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +45,11 @@ class TextViewViewController: UIViewController, UITextViewDelegate {
         self.textView.layer.cornerRadius = 6
         self.textView.layer.borderWidth = 1
         self.textView.layer.borderColor = UIColor.lightGray.cgColor
-        
+        self.validate { (str) -> String in
+            print("=========\(str)")
+            print("33333333333333")
+            return "00000000"
+        }
     }
     func textViewDidChange(_ textView: UITextView) {
         let contentSize = textView.contentSize

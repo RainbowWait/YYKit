@@ -21,6 +21,7 @@ class VCModel: NSObject {
         vcArray.append(VCModel(YYImageExampleController.className(), "Image"))
         vcArray.append(VCModel(YYTextViewController.className(), "Text"))
         vcArray.append(VCModel(FeedListViewController.className(), "Feed List Demo"))
+        vcArray.append(VCModel(CustomViewController.className(), "自定义控件"))
         return vcArray
     }
     

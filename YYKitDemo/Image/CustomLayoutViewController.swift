@@ -13,8 +13,19 @@ class CustomLayoutViewController: UIViewController {
 
     var colle: UICollectionView!
         var activityModel: ActivityListModel?
+    //通过闭包来实现赋值
+    var queue: OperationQueue = {
+        let operationQueue = OperationQueue()
+        operationQueue.maxConcurrentOperationCount  = 1
+        operationQueue.isSuspended = true
+        operationQueue.qualityOfService = .utility
+        return operationQueue
+    }()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.view.backgroundColor = UIColor.white
         self.view.frame = UIScreen.main.bounds
         let layout = CustomLayout()
